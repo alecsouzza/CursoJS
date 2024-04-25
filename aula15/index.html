@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sorteio da Rifa</h1>
+    <p>Numeros disponiveis de 1 a 100 </p>
+    <div id="resultado">
+        o resultado vai aparecer aqui
+    </div>
+    <br>
+
+    <button id="btn">Sortear</button>
+
+
+    <script>
+        let numeroSorteado = 0 ;
+        let botao = document.querySelector("#btn");
+
+        botao.addEventListener('click' , sorteio);
+
+
+
+        // função responsável de gerar os numeros aleatórios.
+        function sorteio () {
+            let divElement = document.getElementById('resultado');
+            divElement.innerHTML = Math.floor(Math.random() * (10 - 1) + 1)
+            
+        }
+
+       
+    </script>
+</body>
+</html>
