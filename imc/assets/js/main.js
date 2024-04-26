@@ -39,6 +39,10 @@ function calcularImc() {
         document.getElementById('resultado').style.backgroundColor = 'red';
         document.getElementById('resultado').style.color = 'white';
 
+    } else if ( imc >100) {
+        resultado.innerHTML = (`Altura invalida`);
+        document.getElementById('resultado').style.backgroundColor = 'red';
+        document.getElementById('resultado').style.color = 'white';
     }
 
 }
